@@ -1,19 +1,17 @@
-@font-face{
-  font-family: 'Quicksand-Medium';
-  font-weight: 500;
+@font-face {
+  font-family: "GTEestiProDisplay-Bold";
+  font-weight: 700;
   font-style: normal;
-  src: local('Quicksand-Medium'),
-       url('../fonts/Quicksand-Medium.woff2') format('woff2'),
-       url('../fonts/Quicksand-Medium.woff') format('woff');
+  src: local("GTEestiProDisplay-Bold"), url("../fonts/GTEestiProDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/GTEestiProDisplay-Bold.woff") format("woff");
   font-display: swap;
 }
 
-@font-face{
-  font-family: 'Quicksand-Regular';
+@font-face {
+  font-family: "GTEestiProDisplay-Regular";
   font-weight: 400;
   font-style: normal;
-  src: local('Quicksand-Regular'),
-       url('../fonts/Quicksand-Regular.woff2') format('woff2'),
-       url('../fonts/Quicksand-Regular.woff') format('woff');
+  src: local("GTEestiProDisplay-Regular"), url("../fonts/GTEestiProDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/GTEestiProDisplay-Regular.woff") format("woff");
   font-display: swap;
 }

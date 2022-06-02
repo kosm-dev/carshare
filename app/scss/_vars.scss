@@ -1,0 +1,13 @@
+// colors
+$default: #6d6d6d;
+$accent: #ec656d;
+// fonts
+%gte-400 {
+  font-family: "GTEestiProDisplay-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%gte-700 {
+  font-family: "GTEestiProDisplay-Bold", sans-serif;
+  font-weight: 700;
+}
