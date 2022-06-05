@@ -18,11 +18,15 @@
   &__logo {
     padding-left: 25px;
   }
+
   &__menu {
-    padding: 0 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
   }
   &__login {
+    padding-left: 58px;
     padding-right: 12px;
     @extend %gte-700;
     font-size: 20px;
@@ -37,11 +41,14 @@
     flex-wrap: wrap;
     align-items: center;
   }
-  &__list-item + .menu__list-item {
-    margin-left: 30px;
+  &__list-item {
+    margin-right: 30px;
   }
-
+  &__list-item:last-child {
+    margin-right: 0;
+  }
   &__list-link {
+    display: inline-block;
     @extend %gte-400;
     font-size: 20px;
     line-height: 35px;
@@ -50,21 +57,17 @@
 }
 
 // top
-
-.main {
-  &__top {
-  }
-}
 .top {
-  min-height: 720px;
+  min-height: 100vh;
   background-image: url("../images/top-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 85px;
-  &__inner {
-  }
+
   &__title {
+    max-width: 940px;
+    width: 100%;
     padding: 90px 25px 0;
     margin-bottom: 54px;
   }
@@ -85,6 +88,7 @@
   }
   &__items {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -109,8 +113,11 @@
     display: flex;
     flex-direction: column;
   }
-  &__item + .top__item {
-    margin-left: 173px;
+  &__item {
+    margin-right: 173px;
+  }
+  &__item:last-child {
+    margin-right: 0;
   }
   &__item-value {
     @extend %gte-700;
@@ -124,14 +131,12 @@
 
 .tariffs {
   padding-top: 38px;
-  &__inner {
-  }
+
   &__tabcontainer {
     display: flex;
     align-items: center;
   }
-  &__items {
-  }
+
   &__item {
     position: relative;
     max-width: 915px;
@@ -185,8 +190,7 @@
   &__item-icon {
     margin-right: 50px;
   }
-  &__item-content {
-  }
+
   &__item-price {
     @extend %gte-700;
     font-size: 40px;
@@ -197,8 +201,7 @@
     width: 280px;
     margin-right: 47px;
   }
-  &__list {
-  }
+
   &__list-item {
     margin-bottom: 20px;
     @extend %gte-700;
@@ -225,17 +228,9 @@
   }
 }
 
-.tabcontainer {
-}
-.tabcontent {
-}
 .tabheader {
-  &__items {
-  }
   &__item {
     cursor: pointer;
-  }
-  &__item-active {
   }
 }
 
@@ -265,8 +260,6 @@
     line-height: 45px;
     color: #000000;
   }
-  &__item-text {
-  }
 }
 
 // booking
@@ -278,8 +271,7 @@
   background-size: contain;
   background-position: center center;
   background-color: #f1f7fa;
-  &__inner {
-  }
+
   &__title {
     margin-bottom: 98px;
     max-width: 720px;
@@ -296,8 +288,11 @@
   &__text p:not(:last-child) {
     margin-bottom: 5px;
   }
-  &__btns {
+
+  .booking__btns {
+    display: flex;
   }
+
   &__button + .booking__button {
     margin-left: 50px;
   }
@@ -325,10 +320,7 @@
   &__pay-item + .footer__pay-item {
     margin-left: 40px;
   }
-  &__pay-link {
-  }
-  &__social {
-  }
+
   &__social-title {
     margin-bottom: 32px;
   }
@@ -339,16 +331,14 @@
   &__social-item + .footer__social-item {
     margin-left: 40px;
   }
-  &__social-link {
-  }
+
   &__copy {
     display: flex;
   }
   &__copy-item + .footer__copy-item {
     margin-left: 48px;
   }
-  &__copy-link {
-  }
+
   &__copy-author {
     margin-left: auto;
     padding-left: 15px;
